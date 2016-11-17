@@ -52,6 +52,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Portfolio'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: "Bad route"
